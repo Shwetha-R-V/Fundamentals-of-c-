@@ -259,5 +259,81 @@ int main()
 {
     cout<<"Hello Aliens ! Welcome to our planet Earth.";
 }
-//
+//MS Dhoni is one of the cricket's most charismatic personalities today. He has been a true inspirational figure and has provided for some great cricketing moments. He has a huge fan base across borders irrespective of age, nationality, nor languages spoken. India, being the a diverse country of ethnic culture, so does the Indian Captian who now has nick name in diversified ways like M.S, MSD, Mahi, Thala, Ranchi Rocker, Captian Cool, etc.,. Write a program to  print the various nick names of Dhoni separated by comma.
 
+Input Format:
+There is no input.
+
+Output Format:
+Print the nick names of Dhoni separated by comma.
+
+Refer the sample input and output for formatting specifications.
+
+Sample Output:
+M.S, MSD, Mahi, Thala, Ranchi Rocker, Captain Cool
+
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"M.S, MSD, Mahi, Thala, Ranchi Rocker, Captain Cool";
+}
+//Dhoni's family is from the community of the Rajputs and a simple middle-class family. Dhoni's father Pan Singh Dhoni worked for MECON, a public-sector engineering firm and his mother Devki Devi, a housewife. He has an elder brother Narendra Singh Dhoni who is a politician and a sister Jayanti Gupta who is a teacher.
+
+Write a program to display Dhoni's family details, in the following format:
+M. S. Dhoni
+Father: Mr. Pan Singh
+Mother: Mrs. Devki Devi
+Sibings: Narendra Singh and Jayanti Gupta
+
+Input Format:
+There is no Input
+
+Output Format:
+Print the dhoni family details as given above.
+
+Refer sample input and output for formatting specifications.
+
+Sample Output:
+M. S. Dhoni
+Father: Mr. Pan Singh
+Mother: Mrs. Devki Devi
+Sibings: Narendra Singh and Jayanti Gupta
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"M. S. Dhoni";
+    cout<<"\nFather: Mr. Pan Singh";
+    cout<<"\nMother: Mrs. Devki Devi";
+    cout<<"\nSibings: Narendra Singh and Jayanti Gupta";
+}
+//MS Dhoni is the highest-paid batsman on the endorsement circuit and he was ranked 23rd by Forbes amoung the world's highest-paid athletes last year - the only cricketer on the list - with $27 million in earning from endorsements.
+
+Currently Dhoni has 20 endorsements only one less than Shahrukh Khan. It includes Pepsica, AIRCEL Communications, Titan, TVS Motors, Boost, Reebok, Videocon, GE Money, NDTV, etc.,.
+
+Write a program to print th list of any 10 endorsements that Dhoni owns.
+
+Refer the Sample Output.
+
+Sample Output:
+Pepsico
+AIRCEL
+Communications
+Titan
+TVS
+Motors
+Boost
+Reebok
+Videocon
+GE Money
+
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Pepsico\nAIRCEL\nCommunications\nTitan\nTVS\nMotors\nBoost\nReebok\nVideocon\nGE Money";
+}
