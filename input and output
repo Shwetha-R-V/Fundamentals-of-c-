@@ -337,4 +337,197 @@ int main()
 {
     cout<<"Pepsico\nAIRCEL\nCommunications\nTitan\nTVS\nMotors\nBoost\nReebok\nVideocon\nGE Money";
 }
-//
+//MS Dhoni is the highest-paid batsman on the endorsement circuit and he was ranked 23rd by Forbes amoung the world's highest-paid athletes last year - the only cricketer on the list - with $27 million in earning from endorsements.
+
+Currently Dhoni has 20 endorsements only one less than Shahrukh Khan. It includes Pepsica, AIRCEL Communications, Titan, TVS Motors, Boost, Reebok, Videocon, GE Money, NDTV, etc.,.
+
+Write a program to print th list of any 10 endorsements that Dhoni owns.
+
+Refer the Sample Output.
+
+Sample Output:
+Pepsico
+AIRCEL
+Communications
+Titan
+TVS
+Motors
+Boost
+Reebok
+Videocon
+GE Money
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Pepsico\nAIRCEL\nCommunications\nTitan\nTVS\nMotors\nBoost\nReebok\nVideocon\nGE Money";
+}
+//It was in the 1997-98 season that Ranchi saw the rise of the Captain Cool in the interschool trophy between DAV Jawahar Vidhya Mandir and Kendriya School. It was in that match Dhoni convinced Banerjee to be the opener and justified it with a double century.
+
+Write a program to display the details of the match with Team name, Scores of the team and Overs played.
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input and Output:
+
+Team 1:
+
+Team Name:
+
+DAV Jawahar Vidhya Mandir
+
+Score:
+
+150
+
+Overs played:
+
+20
+
+Team 2:
+
+Team name:
+
+Kendriya School
+
+Score:
+
+110
+
+Overs played:
+
+18
+
+Match Details:
+
+Team 1:
+
+Name: DAV Jawahar Vidhya Mandir
+
+Score: 150
+
+Overs played: 20
+
+Team 2:
+
+Name:  Kendriya School
+
+Score: 110
+
+Overs played: 18
+program:
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    int s1,op1,s2,op2;
+    string tn1,tn2;
+    cout<<"Team 1:";
+    cout<<"\nTeam Name:";
+    getline(cin,tn1);
+    cout<<"\nScore:";
+    cin>>s1;
+    cout<<"\nOvers played:";
+    cin>>op1;
+    cin.ignore();
+    cout<<"\nTeam 2:";
+    cout<<"\nTeam Name:";
+    getline(cin,tn2);
+    cout<<"\nScore:";
+    cin>>s2;
+    cout<<"\nOvers played:";
+    cin>>op2;
+    cout<<"\nMatch Details:\nTeam 1:\nName: "<<tn1<<"\nScore: "<<s1<<"\nOvers played: "<<op1;
+    cout<<"\nTeam 2:\nName: "<<tn2<<"\nScore: "<<s2<<"\nOvers played: "<<op2;
+}
+//Keshab Ranjan Banerjee, a senior sports teacher at Dhoni's Jawahar Vidhya Mandhir School, spotted Dhoni when he was goal keeping for a football match.
+
+He got impressed by Dhoni's saves and thought of trying him out behind the stumps for the school's cricket team. In his first meet with Dhoni, Banerjee asked him his name and the game that Dhoni loves to play. Write a program to display Dhoni's reply.
+
+Input and Output Format:
+Refer the sample input and output for formatting specifications.
+All the text in bold corresponds to input and rest corresponds to output.
+
+Sample Input and Output:
+Name:
+Dhoni
+Game:
+Football
+My name is Dhoni and I love to play Football
+program:
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string name,game;
+    cout<<"Name:\n";
+    getline(cin,name);
+    cout<<"Game:\n";
+    getline(cin,game);
+    cin>>game;
+    cout<<"My name is "<<name;
+    cout<<" and I love to play "<<game;
+    cout<<"\n";
+}
+//There are more than 20 cricket stadium allotted for the India's Biggest Cricket Tournament (IPL). All the stadiums are having different name. You will remember only one stadium name during the match only. So, you need to get the stadium name from the tournament management and print the stadium name for the players too.
+
+Input Format:
+Input value consists of a String.
+
+Output Format:
+Output value consists of a String.
+
+Sample Input:
+Wankhede Stadium
+
+Sample Output:
+Today's match will be held at Wankhede Stadium
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    getline(cin,a);
+    cout<<"Today's match will be held at "<<a;
+    
+}
+//After Dhoni made it to the pinnacle of Success as Indian Captain, Mr. Banerjee was once invited by the Media to recall his association with Dhoni. Mr. Banerjee quoted one important moment that complemented the traits of Dhoni. It was when he approached Dhoni and asked him if he would play cricket for the school team saying "Will you be a wicketkeeper?" and was taken aback by Dhoni's confident reply "I will if I get a chance". Write a program to display the answers of Dhoni that impressed his master.
+
+Input and Output Format:
+Refer Sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output:
+Banerjee's Question:
+Will you be a wicketkeeper?
+Dhoni's Reply:
+I will if i get a chance.
+For Banerjee's question "Will you be a wicketkeeper?" Dhoni's confident reply was "I will if I get a chance."
+program:
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+    string q;
+    cout<<"Banerjee's Question:\n";
+    getline(cin,q);
+    string a;
+    cout<<"Dhoni's Reply:\n";
+    getline(cin,a);
+    cout<<"For Banerjee's question \""<<q<<"\" Dhoni's confident reply was \""<<a;
+    
+}
+
+
+
+
+
