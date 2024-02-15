@@ -1,1 +1,1147 @@
+//Write a C program to do an Arithmetic Operators.
+
+Input Format: 
+
+Input consists of two integers 
+
+Output Format:
+
+Output consist of integers
+
+Sample Input :
+
+7
+
+5
+
+
+
+Sample Output :
+
+
+7 + 5 = 12
+7 - 5 = 2
+7 * 5 = 35
+7 / 5 = 1
+7 % 5 = 2
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<a<<"+"<<b<<"="<<a+b;
+    cout<<"\n"<<a<<"-"<<b<<"="<<a-b;
+    cout<<"\n"<<a<<"*"<<b<<"="<<a*b;
+    cout<<"\n"<<a<<"/"<<b<<"="<<a/b;
+    cout<<"\n"<<a<<"%"<<b<<"="<<a%b;
+    return 0;
+    
+}
+//Suriya wanted to start a business and he was looking for a venture capitalist. Through his friend Kumar he went to a the owner of a Construction company who is looking to invest on a  emerging business.  Looking after the business proposal , the owner was very much impressed with Alice work. He wanted to invest in Suriya's Business. So he gives a green signal to go ahead with the project. Suriya bought Rs.X for a period of Y years from the owner at R% interest per annum. Find the rate of interest and the total amount to be given by Suriya a special offer of 2% discount in the total interest at the end of the settlement. Find the amount given back by Alice and also find total amount. (Note. All rupees value should be in two decimal points).
+
+INPUT FORMAT: 
+
+Input consists of 3 integers. 
+
+The first integer corresponds to the principal amount borrowed by Alice. 
+
+The second integer corresponds to the rate of interest 
+
+The third integer corresponds to the number of years. 
+
+OUTPUT FORMAT: 
+
+The output consists of 4 floating point values. 
+
+The first value corresponds to the interest. 
+
+The second corresponds to the amount. 
+
+The third value corresponds to the discount. 
+
+The last value corresponds to the final settlement. 
+
+All floating point values are to be rounded off to two decimal places
+
+Sample Input
+
+100
+
+1
+
+10
+
+Sample Output
+
+
+10.00
+110.00
+0.20
+109.80
+program:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,r,n,i,A,d,f;
+    cin>>a>>r>>n;
+    i=(a*r*n/100);
+    cout<<fixed<<setprecision(2)<<i;
+    A=a+i;
+    cout<<"\n"<<fixed<<setprecision(2)<<A;
+    
+    d=(i*0.02);
+    cout<<"\n"<<fixed<<setprecision(2)<<d;
+    f=A-d;
+    cout<<"\n"<<fixed<<setprecision(2)<<f;
+}
+//There was a large ground in center of the city which is rectangular in shape. The Corporation decides to build a Football stadium in the area for school and college students, But the area was used as a car parking zone. In order to protect the land from using as an unauthorized parking zone , the corporation wanted to protect the stadium by building a fence. In order to help the workers to build a fence, they planned to place a thick rope around the ground. They wanted to buy only the exact length of the rope that is needed. They also wanted to cover the entire ground with a carpet during rainy season. They wanted to buy only the exact quantity of carpet that is needed. They requested your help.
+Can you please help them by writing a program to find the exact length of the rope and the exact quantity of carpet that is required?
+
+Input format:
+Input consists of 2 integers.
+The first integer corresponds to the length of the ground
+The second integer corresponds to the breadth of the ground.
+Output Format:
+Output Consists of two integers.
+The first integer corresponds to the length.
+The second integer corresponds to the quantity of carpet required.
+
+Sample Input:
+20
+
+90
+
+Sample Output:
+
+220
+
+1800
+
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<(2*(a+b));
+    cout<<"\n"<<(a*b);
+
+    return 0;
+}
+//The Training for Culturals has begun and Fine Arts teacher has decided to conduct some group dance. The teacher wants to split the students in the Higher Secondary into equal sized teams. In some cases, there may be some students who are left out from teams and he wanted to use the left out students to assist him in conducting the group dances. For instance, if there are 50 students in the class and if the class has to be divided into 7 equal sized teams, 7 students will be there in each team and 1 student will be left out. Fine Arts teacher asks your help to automate this team splitting task. Can you please help him out?
+
+INPUT FORMAT:
+Input consists of 2 integers.
+The first integer corresponds to the number of students in the class
+The second integer corresponds to the number of teams.
+
+OUTPUT FORMAT:
+The output consists of two integers.
+The first integer corresponds to the number of students in each team
+The second integer corresponds to the students who are left out.
+Sample Input
+60
+
+8
+
+Sample Output
+
+7
+4
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<(a/b);
+    cout<<"\n"<<(a%b);
+}
+//Each Sunday, a Paper bags agency sells w copies of a special edition Paper bags for Rs.x per copy. The cost to the agency of each Paper bag is Rs.y . The agency pays a fixed cost for storage, delivery and so on of Rs.100 per Sunday. The Paper bag agency wants to calculate the profit which it obtains only on Sundays. Can you please help them out by writing a program to compute the profit given w, x and y. 
+
+INPUT FORMAT:
+Input consists of 3 integers: w, x, and y.
+w is the number of copies sold
+x is the cost per copy
+y is the cost the agency spends per copy.
+
+OUTPUT FORMAT:
+The output consists of a single integer which corresponds to the profit obtained by the paper bag agency.
+
+Sample Input:
+1000
+
+2
+
+1
+
+Sample Output:
+
+900
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int w,x,y;
+    cin>>w>>x>>y;
+    cout<<(((w*x)-(w*y))-100);
+   
+    
+}
+//A young man named Diffny leaves home to travel to California, to join the Team Flash. Although Diffny is not able to join this elite team immediately, he befriends the three most formidable members of the age: Joe, Ramsey and vixon and gets involved in affairs of the state and court.At that time, the Villan was planning to dethrone the king and to take the kingdom and to remove the Team Flash of the guard. Since the Villan has spies mixed with the local public , Diffny decides to send a message of his whereabouts to the team Flash in unique way.He gave a note to a boy which has the following message. I am at the midpoint of the line joining the farmhouse next to the palace and the light house. The Team Flash were puzzled. Can you help them find out the location of Diffny?Given the coordinates of the 2 places (x1,y1) and (x2,y2), write a program to find the location of Diffny.
+
+Input & Output Format:
+
+Input consists of 4 integers.
+
+First value consists of x1.
+
+Second value consists of y1.
+
+Third value consists of x2.
+
+Fourth value consists of y2.
+
+Output consists of two float values.
+
+Sample Input
+2
+
+4
+
+10
+
+15
+
+Sample Output
+
+
+6.0
+9.5
+program:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float x1,y1,x2,y2;
+    cin>>x1>>y1>>x2>>y2;
+    cout<<fixed<<setprecision(1)<<(x1+x2)/2;
+    cout<<"\n"<<(y1+y2)/2;
+    
+}
+//Four kids Peter,Susan,Edmond and Lucy travel through a wardrobe to the land of Narnia. Narnia is a fantasy world of magic with mythical beasts and talking animals.While exploring the land of narnia Lucy found Mr.Tumnus the two legged stag ,and she followed it, down a narrow path .She and Mr.Tumnus became friends and he offered a cup of coffee to Lucy in his small hut.It was time for Lucy to return to her family and so she bid good bye to Mr.Tumnus and while leaving Mr.Tumnus told that it is quite difficult to find the route back as it was already dark.He told her to see the trees while returning back and said that the first tree with two digits number will help her find the way and the way to go back to her home is the sum of digits of the tree and that numbered way will lead her to the tree next to the wardrobe where she can find the others.Lucy was already confused, so pls help her in finding the route to her home.... 
+
+Input Format:
+Input consists of an integer corresponding to the 2-digit number.
+Output Format:
+Output consists of an integer corresponding to the sum of its digits.
+
+Sample Input
+23
+
+Sample Output
+5
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a;
+    b=(a/10);
+    c=(a%10);
+    cout<<(b+c);
+}
+//Long ago , there was a war between the Romans and Greeks.The Roman and Greek armies meet outside the walls of Florence. Seeing the bloodshed the two kings to decide to end the battle as early as possible as both the armies suffer a lot.
+The shape of the battle ground is Square. To win the war is to conquer the flag first by the opposite army , it has been decided to place the flag post at the exact center of the battle field. Can you please help them in placing the flag post at the exact center? Given the coordinates of the left bottom vertex of the square ground and the length of the side of the battle field, you need to write a program to determine the coordinates of the centre of the ground. 
+[Assumption --- Length of the side is always even] 
+
+Input & Output Format:
+
+Input consists of three integers
+
+First input consists of x coordinate
+
+Second input consists of y coordinate
+
+Third input consists of the length.
+
+The output consists of the two integers.
+
+Sample Input
+4
+
+0
+
+8
+
+Sample Output
+
+8 4
+program:
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int x1,y1,x2,y2,l;
+    cin>>x1;
+    cin>>y1;
+    cin>>l;
+    x2=x1+l;
+    y2=y1+l;
+    cout<<((x1+x2)/2)<<"\t"<<((y1+y2)/2);
+}
+//Diffny also joined the group of Team Flash. Meanwhile, Diffny also moved to a new house in the same locality nearby to the other three. Now the houses of Joe, Ramsey and vixon are located in the shape of a triangle. Harry also has moved to a house in the same locality. When the Team Flash asked daffy about the location of his house , he said that his house is equidistant from the houses of the other 3. Can you please help them find out the location of the house?Given the 3 locations {(x1,y1), (x2,y2) and (x3,y3)} of a triangle, write a program to determine the point which is equidistant from all the 3 points.
+
+INPUT FORMAT: 
+
+Input consists of 6 integers. 
+
+The first integer corresponds to x1. 
+
+The second integer corresponds to y1. 
+
+The third and fourth integers correspond to x2 and y2 respectively. 
+
+The fifth and sixth integers correspond to x3 and y3 respectively. 
+
+OUTPUT FORMAT: 
+
+The output consists of two floating point numbers (with one decimal place) which correspond to the location of the house.
+
+Sample Input
+
+2
+
+4
+
+10
+
+15
+
+5
+
+
+8
+
+Sample Output
+
+
+5.7
+9.0
+program:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float x1,x2,x3,y1,y2,y3;
+    cin>>x1;cin>>y1;cin>>x2;cin>>y2;cin>>x3;cin>>y3;
+    cout<<fixed<<setprecision(1)<<((x1+x2+x3)/3);
+    cout<<fixed<<setprecision(1)<<"\n"<<((y1+y2+y3)/3);
+}
+//Mrs.Raja is a miser to the core.She saves money even on petite things. One dayshe heard a discount offer announced in a shop. she wants to purchase lot of items to save her money. The discount is given only when atleast two items are bought. Since each item has different discount prices , she finds difficult to check the amount she has saved. So she approaches you to device a automated discount calculator to make her easy while billing. 
+
+INPUT FORMAT:
+
+Input consists of two floating point values denoting price of item1 and item2. 
+
+The third input denotes the discount value in percentage. 
+
+OUTPUT FORMAT: 
+
+The output consists of three floating values denoting total amount, discounted price and amount saved.
+
+ Sample Input
+
+20.50
+
+45.40
+
+
+10
+
+Sample Output
+
+
+65.90
+59.31
+6.59
+program:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+
+{
+    float a,b,c,d,e,f,sa;
+    cin>>a>>b>>c;
+    d=a+b;
+    cout<<"\n"<<fixed<<setprecision(2)<<d;
+    f=c/100;
+    e=d*f;
+    sa=d-e;
+    cout<<"\n"<<fixed<<setprecision(2)<<sa;
+    cout<<"\n"<<fixed<<setprecision(2)<<e;
+
+    
+}
+//Though there have been more successful pirates, Stoneheart is one of the best-known and widely-feared of his time . He commanded four ships and had a pirate army of 300 at the height of his career, and defeated the famous warship, HMS “Scarborough” in sea-battle. He was known for barreling into battle clutching two swords, with several knives and pistols at the ready. He captured over forty merchant ships in the Caribbean, and without flinching killed many prisoners. Stoneheart and his three pirates found a treasure of gold coins Short Fin too joined them. They decided to share the treasure. Stoneheart agreed to give x % share for Short Fin. He then decided to take y % share from the remaining treasure. His other pirates willl share equally the remaining gold coins. Write a program to compute their share's. 
+
+INPUT FORMAT: 
+
+Input consists of 3 integers. 
+
+The first input corresponds to the number of gold coins in the treasure. 
+
+The second input corresponds to Finn's share percentage 
+
+The last input is Stoneheart's share percentage. 
+
+OUTPUT FORMAT: 
+
+The output consists of three integers. 
+
+The first output integer corresponds to Short Fin's share. 
+
+The second integer corresponds to Stoneheart's share. 
+
+The last integer corresponds to other pirates share.
+
+Sample Input
+500
+
+25
+
+
+33
+
+Sample Output
+
+
+125
+123
+84
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e;
+    cin>>a>>b>>c;
+    cout<<(d=(a*b/100));
+    e=((a-d)*c/100);
+    cout<<"\n"<<e;
+    cout<<"\n"<<((a-(d+e))/3);
+}
+//My name is Binfon and I am tribal. I couldn't understand how you measure days, weeks, months and year. Please make me to understand about the days, weeks, months and year. Dear Friend, Make Binfon to understand what is meant by days,week, months and year. Teach him about the conversion of days in to years, weeks and days using a program.
+
+INPUT FORMAT: 
+
+Input consists of an integer which corresponds to the number of days. 
+
+OUTPUT FORMAT: 
+
+The output consists of three integers. 
+
+The first integer corresponds to the total years. 
+
+The second integer corresponds to the total weeks. 
+
+The third integer corresponds to the total days.
+
+Sample Input
+373
+
+Sample Output
+
+
+1
+1
+1
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a;
+    b=(a/365);
+    c=((a%365)/7);
+    d=((a%365)%7);
+    cout<<"\n"<<b;
+    cout<<"\n"<<c;
+    cout<<"\n"<<d;
+}
+//Big Baggins lives in a colony , he is the only Baggins in his colony who was not able to hop. On his 5th birthday, his father Baggins gifted him a Pogo Stick as he could not jump like the other Baggins. He is so excited to play with pogo stick. The pogo stick hops one unit per jump. He wanders around his house jumping with pogo sticks. He wants to show the pogo stick to his friends and decide to go using pogo sticks. Write a program to find number of hops needed to reach his friends house. Assume that Big Baggins's house is in the location (3,4).
+
+INPUT FORMAT: 
+
+Input consists of two integers x,y. 
+
+The x and y correspond to x and y coordinates of his friends' house. 
+
+OUTPUT FORMAT:
+
+The output is an integer. It corresponds to the number of hops needs to reach his friends' house. 
+
+Sample Input
+5
+
+
+6
+
+Sample Output
+
+
+2
+program:
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+    int x1,x2,y1,y2,e;
+    cin>>x2>>y2;
+    x1=3;
+    y1=4;
+    e=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+    cout<<round(e);
+}
+//Wind chill factor is the felt air temperature on exposed skin due to wind. The wind chill temperature is always lower than the air temperature, and is calculated as per the following formula.
+wcf = 35.74 + 0.6215t + (0.4275t - 35.75) * v^0.16
+Write a program to receive values of temperature and wind velocity and calculate wind chill factor.
+
+INPUT FORMAT: 
+
+The input consists of two integers. 
+
+The first integer corresponds to the temperature of the wind
+
+The second integer corresponds to the wind velocity. 
+
+OUTPUT FORMAT: 
+
+The output consists of a single integer which corresponds to the Wind Chill Factor. 
+
+Decimal values are rounded off to two decimal points.
+
+Sample Input
+35
+
+20
+
+Sample Output
+
+23.92
+program:
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+int main()
+{
+    float t,v,wcf;
+    cin>>t>>v;
+    wcf=(35.74+(0.6215*t)+((0.4275*t)-35.75)*pow(v,0.16));
+    cout<<fixed<<setprecision(2)<<wcf;
+}#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+int main()
+{
+    float t,v,wcf;
+    cin>>t>>v;
+    wcf=(35.74+(0.6215*t)+((0.4275*t)-35.75)*pow(v,0.16));
+    cout<<fixed<<setprecision(2)<<wcf;
+}
+//Write a program to get 2 numbers from the user and calculate their sum and difference using '+' and '-' operators respectively.
+
+Print the corresponding sum and difference of the numbers as output in the console.
+
+Input format:
+
+First input: an integer
+
+Second input: an integer
+
+Output format:
+
+First output will be the sum of two integers
+
+Second output will be the difference of two integers
+
+Sample Input:
+
+55
+
+34
+
+Sample Output:
+
+89
+
+21
+
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<"\n"<<a+b;
+    cout<<"\n"<<a-b;
+}
+//Write a program to get 2 numbers from the user and calculate their product, quotient and remainder using '*', '/' and '%' operators respectively.
+
+Print the corresponding product, quotient and remainder of the numbers as output in the console.
+
+Input format:
+
+First input: an integer
+
+Second input: an integer
+
+Output format:
+
+The first output will be the product of two integers
+
+The second output will be the quotient
+
+The third output will be the remainder
+
+Sample Input:
+50
+
+10
+
+Sample Output:
+
+500
+
+5
+
+0
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<"\n"<<a*b;
+    cout<<"\n"<<a/b;
+    cout<<"\n"<<a%b;
+}
+//Write a program to get 2 numbers from the user and swap their values without any loss of data. You can make use of additional 3rdvariable for swapping.
+
+Print the corresponding swapped values of the two numbers as output in the console.
+
+Input format:
+First input: an integer
+
+Second input: an integer
+
+Output format:
+
+The output will be integers(swapped values)
+
+Sample Input:
+
+20
+
+10
+
+Sample Output:
+
+10
+
+20
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,temp;
+    cin>>a>>b;
+    temp=a;
+    a=b;
+    b=temp;
+    cout<<"\n"<<a;
+    cout<<"\n"<<b;
+}
+//Write a program to swap two values without the use of 3rd variable.
+
+Input format:
+
+First input: an integer
+
+Second input: an integer
+
+Output format:
+
+The output will be integers(swapped values)
+Sample Input:
+
+10
+
+20
+
+Sample Output:
+
+20
+
+10
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    cout<<"\n"<<a;
+    cout<<"\n"<<b;
+}
+//A teacher wants to compute the average of 5 students in her class. Write a program to help her to find the average.
+The average is the sum of all the numbers, then divided by the total numbers.
+
+Input format:
+
+First input: 1st student mark in float
+
+Second input: 2nd student mark in float
+
+Third input: 3rd student mark in float
+
+Fourth input:4th student mark in float
+
+Fifth input: 5th student mark in float
+
+Output format:
+
+The output value should be in float with 2 decimal places.
+
+Sample Input:
+
+10 
+
+20
+
+30
+
+40
+
+50
+
+Sample Output:
+
+30.00
+program:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,d,e;
+    cin>>a>>b>>c>>d>>e;
+    cout<<fixed<<setprecision(2)<<((a+b+c+d+e)/5);
+}
+//Sheela has three things in her bag. She wants to compute the area of 3 things but 3 things are in different shapes. The three things are in square shape, rectangular shape, and circular shape respectively. 
+
+Write a program to help Sheela to calculate the area of different shapes.
+
+Input format:
+First input: a side of a square in integer
+
+Second input: length of a rectangle in integer
+
+Third input: breadth of a rectangle in integer
+
+Fourth input: radius of a circle in float
+
+Output format:
+
+The first output should be the area of a square in integer
+
+The second output should be the area of a rectangle in integer
+
+The third output should be the area of a circle in float with 2 decimal places
+
+Sample Input:
+
+5
+
+5
+
+4
+
+2.0
+
+Sample Output:
+
+25
+
+20
+
+12.56
+program:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int a,b,c;
+    float d;
+    cin>>a>>b>>c>>d;
+    cout<<(a*a);
+    float e=(3.14*d*d);
+    cout<<"\n"<<(b*c);
+    cout<<"\n"<<fixed<<setprecision(2)<<e;
+    
+}
+//pow() function is used to calculate the power of any base and it is defined in math header file. Write a program to read X as the base and N as the power and calculate the result (X^N - X to the power of N).
+
+Input format:
+
+The first line containing integer denotes the base(X)
+
+The second line containing integer denotes the power(N)
+
+Output format:
+
+Print the power of a number
+
+Sample Input:
+
+2
+
+3
+
+Sample Output:
+
+8
+
+program:
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<pow(a,b);
+}
+//Alice was bored that day,so she was sitting on the riverbank .Suddenly  she notices a talking, White Rabbit with a pocket watch .It ran fast,and she followed it, down a rabbit hole .She fell into the hole and found a magical wonderland with dark trees, beautiful flowers.She found many ways numbered from 1,2,3,........18.she was confused which is the right way that will lead her to her home. She found a cute bird, standing in one of the tree. Alice asked the bird the way to go back to her home.The bird said a two digit number( say 23 ) and asked her to find the sum of its digits (2+3=5) and that numbered way will lead her to her home.Alice was already confused, so pls help Alice in finding the route to her home....
+
+Input Format:
+
+Input consists of an integer corresponding to the 2-digit number.
+
+Output Format:
+
+Output consists of an integer corresponding to the sum of its digits. Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+SAMPLE INPUT OUTPUT :
+
+23
+
+Alice must go in path-5
+
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,c,d;
+    cin>>a;
+    c=(a/10);
+    d=(a%10);
+    cout<<"Alice must go in path-"<<c+d;
+    
+    
+}
+//Sara wished to build a new house but she didn't have a sufficient amount. So, she is planning to borrow some money from the bank on simple interest. When she is borrowing some money from the bank, she has to pay back the original amount accompanied by a certain amount of interest on that amount. She wants to find the interest for borrowed money within a certain period. Help her to find the simple interest. 
+Input format:
+
+The first line containing integer value denoting the borrowed amount(principal amount)
+
+The second line containing integer value denoting the period in years
+
+The third line containing float value denoting the rate of interest
+
+Output format:
+
+Print the simple interest with 2 decimal places.
+
+Sample Input:
+
+15000
+
+2
+
+2.8
+
+Sample Output:
+
+840.00
+
+program:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c;
+    cin>>a>>b>>c;
+    cout<<fixed<<setprecision(2)<<((a*b*c)/100);
+}
+//Ajay, Binoy and Chandru were very close friends at school. They were very good in Mathematics and they were the pet students of Emily Mam. Their gang was known as 3-idiots. Ajay, Binoy and Chandru live in the same locality.
+
+A new student Dinesh joins their class and he wanted to be friends with them. He asked Binoy about his house address. Binoy wanted to test Dinesh's mathematical skills. Binoy told Dinesh that his house is at the midpoint of the line joining Ajay's house and Chandru's house. Dinesh was puzzled. Can you help Dinesh out?
+
+Given the coordinates of the 2 end points of a line (x1,y1) and (x2,y2), write a  program to find the midpoint of the line.
+
+Input Format:
+
+Input consists of 4 integers. The first integer corresponds to x1 . The second integer corresponds to y1. The third and fouth integers correspond to x2 and y2 respectively.
+
+Output Format:
+
+Refer Sample Input and Output for exact formatting specifications.
+
+[All floating point values are displayed correct to 1 decimal place]
+
+Sample Input and Output:
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+2
+
+4
+
+10
+
+15
+
+Binoy's house is located at (6.0,9.5)
+
+program:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float x1,x2,y1,y2;
+    cin>>x1>>y1>>x2>>y2;
+    cout<<"Binoy's house is located at ("<<fixed<<setprecision(1)<<((x1+x2)/2) <<","<<((y1+y2)/2)<<")";
+}
+//During the Physical Education hour, PT sir has decided to conduct some team games. He wants to split the students in the class into equal sized teams. In some cases, there may be some students who are left out from teams and he wanted to use the left out students to assist him in conducting the team games.
+
+For instance, if there are 50 students in the class and if the class has to be divided into 7 equal sized teams, 7 students will be there in each team and 1 student will be left out.
+
+PT sir asks your help to automate this team splitting task. Can you please help him out?
+
+Input Format:
+
+Input consists of 2 integers. The first integer corresponds to the number of students in the class and the second integer corresponds to the number of teams.
+
+Output Format:
+
+Refer sample input and output for formatting specifications.
+
+Sample Input and Output:
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+60
+
+8
+
+The number of students in each team is 7 and left out is 4
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a>>b;
+    c=a/b;
+    d=a%b;
+    cout<<"The number of students in each team is "<<c<<" and left out is "<<d;
+}
+//The conditional operator is also known as ternary operator [exp ? true : false] can be used to make an either-or choice. 
+
+Write a program to get a number from the user and find out whether it is odd or even.
+
+Input format:
+
+The input containing integer denotes the given number 
+
+Output format:
+
+If given number is even, print "Even". Otherwise, print "Odd".
+
+Sample Input:
+5
+
+Sample Output:
+
+Odd
+
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    cout<<((a%2==0?"Even":"Odd"));
+    
+}
+//The college ground is rectangular in shape. The Management decides to build a fence around the ground. In order to help the construction workers to build a straight fence, they planned to place a thick rope around the ground. They wanted to buy only the exact length of the rope that is needed. They also wanted to cover the entire ground with a thick carpet during rainy season. They wanted to buy only the exact quantity of carpet that is needed. They requested your help.
+
+Can you please help them by writing a program to find the exact length of the rope and the exact quantity of carper that is required?
+
+Input Format:
+
+Input consists of 2 integers. The first integer corresponds to the length of the ground and the second integer corresponds to the breadth of the ground.
+
+Output Format:
+
+Refer Sample Input and Output for exact formatting specifications.
+
+Sample Input and Output:
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+50
+
+20
+
+Required length is 140m
+
+Required quantity of carpet is 1000sqm
+
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a>>b;
+    c=2*(a+b);
+    d=(a*b);
+    cout<<"Required length is "<<c<<"m";
+    cout<<"\n"<<"Required quantity of carpet is "<<d<<"sqm";
+}
+//Caption Jack sparrow travels across seas for treasure hunt. After the fight with Hector Barbossa he finds a key for the treasure in a secret box. That box is encrypted with a single digit number. The clue to open that box is 
+
+" I will be always four"
+
+" I can only be opened when you add my first and last and enter it"
+
+" If you find a sign , you should not consider it"
+
+Help Captain Jack Sparrow to open the box.
+
+
+INPUT FORMAT: 
+
+Input consists of a single integer which is present on the box. 
+
+OUTPUT FORMAT:
+
+The output is a single integer.
+
+Sample Input
+
+1001
+
+Sample Output
+
+
+2Caption Jack sparrow travels across seas for treasure hunt. After the fight with Hector Barbossa he finds a key for the treasure in a secret box. That box is encrypted with a single digit number. The clue to open that box is 
+
+" I will be always four"
+
+" I can only be opened when you add my first and last and enter it"
+
+" If you find a sign , you should not consider it"
+
+Help Captain Jack Sparrow to open the box.
+
+
+INPUT FORMAT: 
+
+Input consists of a single integer which is present on the box. 
+
+OUTPUT FORMAT:
+
+The output is a single integer.
+
+Sample Input
+
+1001
+
+Sample Output
+
+
+2
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a;
+    b=a/1000;
+    c=a%10;
+    cout<<b+c;
+}
+//Each Sunday, a newspaper agency sells x copies of a certain newspaper for Rs.a per copy. The cost to the agency of each newspaper is Rs.b . The agency pays a fixed cost for storage, delivery and so on of Rs.100 per Sunday. The newspaper agency wants to calculate the profit obtained on sundays. Can you please help them out by writing a program to compute the profit given x, a and b.
+
+Input Format:
+
+Input consists of 3 integers --- x, a and b. X is the number of copies sold, a is the cost per copy and b is the cost the agency spends per copy.
+
+Output Format:
+
+Refer Sample Input and Output for exact formatting specifications.
+
+Sample Input and Output:
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+1000
+
+2
+
+1
+
+The profit obtained is Rs.900
+program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    cout<<"The profit obtained is Rs."<<(a*b)-((a*c)+100);
+}
 
